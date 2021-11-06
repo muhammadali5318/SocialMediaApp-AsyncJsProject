@@ -1,9 +1,47 @@
-form {
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f0f2f5;
+    font-family: 'Roboto', sans-serif;
+}
+
+form,
+.signInForm {
     background-color: white;
     border-radius: 5px;
-    border-top: 5px solid #1877f2;
+    border-top: 5px solid #4c6ef5;
     /* border-radius: 2px 2px 5px 5p; */
-    /* box-shadow: 2px 2px 50px 1px #1291b8; */
+    box-shadow: 0px 0px 20px 6px rgba(51, 51, 51, 0.493);
+}
+
+.email:focus {
+    outline: none !important;
+    /* border: none !important; */
+    box-shadow: none !important;
+    /* background-color: transparent; */
+    /* background-color: transparent; */
+}
+
+.btn {
+    background-color: #4c6ef5;
+    color: white;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #5c7cfa;
+    color: white;
+    font-weight: 500;
+}
+
+.btn:active {
+    border: none;
+    outline: 0;
+    box-shadow: none;
 }
 
 .icon {
@@ -11,26 +49,26 @@ form {
     top: 50%;
     right: 1rem;
     transform: translate(50%, -50%);
-    color: #087f5b;
+    color: #4c6ef5;
 }
 
-
-/* .form-control:focus {
+.form-control:focus {
     border: none;
     outline: 0;
     box-shadow: none;
-    border: 2px solid #12b886;
+    border-radius: 4px;
+    border: 2px solid #4c6ef5;
     background-color: transparent;
     transition: 0.5s;
-} */
+}
 
 .form-control {
     border: none;
     outline: 0;
     box-shadow: none;
-    border-radius: 2.5px;
-    /* border: 2px solid transparent; */
-    border: 2px solid #f0f2f5;
+    border-radius: 0px;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #4c6ef5;
     background-color: transparent;
 }
 
@@ -38,10 +76,30 @@ form {
     position: relative;
 }
 
+.sign-up-a {
+    color: #4c6ef5;
+    text-decoration: none;
+}
+
+
+/* .sign-up-a:hover {
+    color: #12b886;
+} */
+
 .line {
-    border-top: 2px solid #1877f2;
-    color: #1877f2;
+    border-top: 2px solid #4c6ef5;
+    /* color: #08; */
     opacity: 0.3;
+}
+
+.social-icon {
+    background-color: #4c6ef5;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    background-color: #4c6ef5;
 }
 
 .social-icon i {
@@ -49,28 +107,31 @@ form {
 }
 
 .form-txt {
-    color: #045c41;
+    color: #333;
 }
 
-
-/* .pass-icon {
+.pass-icon {
     cursor: pointer;
 }
 
 .pass-icon:hover i {
     color: #12b886;
-} */
-
-
-/* .visibility {
-    visibility: hidden !important;
-} */
-
-.modal-content {
-    background-color: transparent;
-    border: none;
 }
 
-input[type=text]:disabled {
-    background: transparent;
+.visibility {
+    visibility: hidden !important;
+}
+
+.pasmatch,
+.pasmatch1,
+.paslength,
+.paslength1,
+.mailExist,
+.WrongMail {
+    display: none;
+    color: orangered;
+}
+
+.accountCreated {
+    display: none;
 }

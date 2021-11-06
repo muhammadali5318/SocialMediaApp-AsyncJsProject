@@ -1,0 +1,76 @@
+form {
+    background-color: white;
+    border-radius: 5px;
+    border-top: 5px solid #1877f2;
+    /* border-radius: 2px 2px 5px 5p; */
+    /* box-shadow: 2px 2px 50px 1px #1291b8; */
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translate(50%, -50%);
+    color: #087f5b;
+}
+
+
+/* .form-control:focus {
+    border: none;
+    outline: 0;
+    box-shadow: none;
+    border: 2px solid #12b886;
+    background-color: transparent;
+    transition: 0.5s;
+} */
+
+.form-control {
+    border: none;
+    outline: 0;
+    box-shadow: none;
+    border-radius: 2.5px;
+    /* border: 2px solid transparent; */
+    border: 2px solid #f0f2f5;
+    background-color: transparent;
+}
+
+.input-parent {
+    position: relative;
+}
+
+.line {
+    border-top: 2px solid #1877f2;
+    color: #1877f2;
+    opacity: 0.3;
+}
+
+.social-icon i {
+    padding: 5px;
+}
+
+.form-txt {
+    color: #045c41;
+}
+
+
+/* .pass-icon {
+    cursor: pointer;
+}
+
+.pass-icon:hover i {
+    color: #12b886;
+} */
+
+
+/* .visibility {
+    visibility: hidden !important;
+} */
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+input[type=text]:disabled {
+    background: transparent;
+}

@@ -2,6 +2,11 @@
 
 console.log("Running index.js");
 
+
+
+
+
+
 var ApiKey = "61836eb8186ebc024cedc6a9";
 const friendsList = document.querySelector(".friendsList");
 const middle = document.querySelector(".middle");
