@@ -208,9 +208,11 @@ a {
     display: block;
 }
 
-.LeftBarFriends:hover {
+.LeftBarFriends:hover,
+.postNowBtn:hover {
     background-color: #f0f2f5;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 
@@ -265,44 +267,4 @@ label {
 .addFriendIcon {
     font-size: 1.6rem;
     color: #333;
-}
-
-@media (max-width: 950px) {
-    .left {
-        display: none;
-    }
-    .middle {
-        flex-basis: 68%;
-    }
-    .right {
-        border-radius: 0.8rem;
-        border: 2px solid blueviolet;
-        flex-basis: 28%;
-        background-color: burlywood;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
-}
-
-@media (max-width: 750px) {
-    .left {
-        display: none;
-    }
-    .middle {
-        flex-basis: 97%;
-    }
-    .right {
-        display: none;
-    }
-    .main {
-        display: flex;
-        justify-content: center;
-        margin-top: 0rem;
-        position: absolute;
-        padding: 2rem;
-        padding-top: 5rem;
-        background-color: blueviolet;
-        border-radius: 1rem;
-    }
 }
