@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <!-- <link rel="stylesheet" href="./Assets/css/style1.css"> -->
+    <link rel="stylesheet" href="./Assets/css/login.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light
+            bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another
+                                        action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something
+                                        else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <section class="d-flex">
+
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </section>
+        </div>
+    </nav>
+    <section class="main_section">
+
+        <main class="main container">
+            <div class="left">
+
+                <div class="d-flex my-3 px-4 search-contianer">
+                    <input type="text" class="SearchFriend" placeholder="Search" name="" id="">
+                    <i class="search fas fa-search"></i>
+                </div>
+
+                <hr class="mt-4">
+
+                <section class="mx-4 FriendSection">
+
+                    <h2>Your groups</h2>
+
+                    <div class="LeftBarFriends mt-4 px-3 py-1 d-flex
+                            align-items-center gap-4">
+                        <figure class="my-0 group-img-container">
+                            <img src="Assets/Images/20170108_200725.jpg" alt="">
+                        </figure>
+                        <div class="userPostHead">
+                            <h6 class="mb-0">Muhammad Ali</h4>
+                        </div>
+                    </div>
+                    <div class="LeftBarFriends mt-4 py-1 px-3 d-flex
+                            align-items-center gap-4">
+                        <figure class="my-0 group-img-container">
+                            <img src="Assets/Images/20170108_200725.jpg" alt="">
+                        </figure>
+                        <div class="userPostHead">
+                            <h6 class="mb-0">Muhammad Ali</h4>
+                        </div>
+                    </div>
+
+                    <h2 class="mt-5">Friends</h2>
+
+                    <section class="friendsList">
+
+                        <!-- <div class="mt-4 d-flex align-items-center
+                                justify-content-between">
+                            <div class="d-flex align-items-center gap-4">
+                                <figure class="my-0 group-img-container">
+                                    <img src="Assets/Images/20170108_200725.jpg" alt="">
+                                </figure>
+                                <div class="userPostHead">
+                                    <h6 class="mb-0">Muhammad Ali</h4>
+                                </div>
+                            </div>
+
+                            <div>
+                                <i style="color: #51cf66;" class="fas
+                                        fa-dot-circle"></i>
+                            </div>
+                        </div> -->
+                    </section>
+
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="middle">
+
+                <section class="postNow my-3 p-3">
+
+                    <div class="d-flex align-items-center gap-3
+                            postNowHead">
+                        <figure class="my-0 img-container">
+                            <img src="Assets/Images/20170108_200725.jpg" alt="">
+                        </figure>
+
+                        <input type="text" placeholder="What on Your mind?" name="" id="">
+
+                    </div>
+                    <hr>
+                    <div class="d-flex align-items-center
+                            justify-content-around postNowFoot">
+
+                        <a class="d-flex align-items-center gap-2" href="">
+                            <i style="color: #c92a2a;" class="navIcon fas
+                                    fa-video"></i>Live Video
+                        </a>
+                        <a class="d-flex align-items-center gap-2" href="">
+                            <i style="color: #51cf66;" class="navIcon fas
+                                    fa-images"></i>Feeling/Activity
+                        </a>
+                        <a class="d-flex align-items-center gap-2" href="">
+                            <i style="color: #fcc419;" class="navIcon far
+                                    fa-laugh"></i> Photos/Videos
+                        </a>
+                    </div>
+
+                </section>
+
+                <section class="postNow my-3 p-3">
+
+                    <div class="d-flex align-items-center gap-3
+                            postNowHead">
+
+                        <a class="d-flex align-items-center gap-2
+                                createRoom" href="">
+                            <i class="navIcon fas fa-video"></i>Create Room
+                        </a>
+
+                        <figure class="my-0 img-container">
+                            <img src="Assets/Images/20170108_200725.jpg" alt="">
+                        </figure>
+
+                        <figure class="my-0 img-container">
+                            <img src="Assets/Images/20170108_200725.jpg" alt="">
+                        </figure>
+
+                        <figure class="my-0 img-container">
+                            <img src="Assets/Images/20170108_200725.jpg" alt="">
+                        </figure>
+
+                        <figure class="my-0 img-container">
+                            <img src="Assets/Images/20170108_200725.jpg" alt="">
+                        </figure>
+
+                        <figure class="my-0 img-container">
+                            <img src="Assets/Images/20170108_200725.jpg" alt="">
+                        </figure>
+
+                        <figure class="my-0 img-container">
+                            <img src="Assets/Images/20170108_200725.jpg" alt="">
+                        </figure>
+
+
+                    </div>
+
+                </section>
+
+                <!-- ***************************User Post ********************************* -->
+                <!-- <section class="userPost postNow p-3 my-3">
+
+                    <section class="d-flex
+                            justify-content-between
+                            align-items-center">
+
+                        <div class="d-flex justify-content-between
+                                align-items-center gap-3">
+                            <figure class="my-0 img-container">
+                                <img src="Assets/Images/20170108_200725.jpg" alt="">
+                            </figure>
+                            <div class="userPostHead">
+                                <h4>Muhammad Ali</h4>
+                                <span class="time">2 Days Ago. <i class="fas
+                                            fa-globe-americas"></i> </span>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#"><i style="color: #333;" class="me-3
+                                        navIcon fas
+                                        fa-ellipsis-h"></i></a>
+                        </div>
+
+                    </section>
+
+                    <section class="userPostDescription my-3">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, voluptate. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, adipisci.
+                        </p>
+
+
+                    </section>
+                    <section class="userPostImage">
+                        <figure>
+                            <img src="./Assets/Images/20170108_200725.jpg" alt="" class="img-fluid">
+                        </figure>
+
+                    </section>
+                    <section class="userPostTags p-3 postNow d-flex gap-4
+                            flex-wrap">
+                        <h5><span class="badge bg-secondary">New</span></h5>
+                        <h5><span class="badge bg-secondary">Hello</span></h5>
+                        <h5><span class="badge bg-secondary">summer</span></h5>
+                        <h5><span class="badge bg-secondary">nature</span></h5>
+                        <h5><span class="badge bg-secondary">Cool</span></h5>
+                        <h5><span class="badge bg-secondary">Instagram</span></h5>
+                        <h5><span class="badge bg-secondary">Facebook</span></h5>
+                        <h5><span class="badge bg-secondary">whatsapp</span></h5>
+                        <h5><span class="badge bg-secondary">Twitter</span></h5>
+                        <h5><span class="badge bg-secondary">New</span></h5>
+                        <h5><span class="badge bg-secondary">summer</span></h5>
+                        <h5><span class="badge bg-secondary">Hello</span></h5>
+                        <h5><span class="badge bg-secondary">Instagram</span></h5>
+                        <h5><span class="badge bg-secondary">Facebook</span></h5>
+                        <h5><span class="badge bg-secondary">nature</span></h5>
+                        <h5><span class="badge bg-secondary">Cool</span></h5>
+                        <h5><span class="badge bg-secondary">whatsapp</span></h5>
+                        <h5><span class="badge bg-secondary">Twitter</span></h5>
+                    </section>
+
+                    <section class="userPostLikes my-3 px-3 d-flex gap-4
+                            align-items-center justify-content-between">
+                        <div>
+
+                            <a id="likePost"><i class="likePostIcon
+                                        navIcon far
+                                        fa-heart"></i></a>
+                            <a href="#"><i class="navIcon far fa-comment"></i></a>
+                            <a href="#"><i class="navIcon px-1 fas
+                                        fa-share-alt"></i></a>
+                        </div>
+                        <div>
+                            <a href="#"><i class="navIcon far fa-bookmark"></i></a>
+                        </div>
+
+                    </section>
+
+                    <section class="userPostLikes d-flex gap-4
+                            align-items-center">
+
+                        <div class="delivered-imgs">
+                            <img src="Assets/Images/20170108_200725.jpg" alt="Customer photo" />
+                            <img src="Assets/Images/20170108_200725.jpg" alt="Customer photo" />
+                            <img src="Assets/Images/20170108_200725.jpg" alt="Customer photo" />
+
+                        </div>
+                        <p class="my-0">liked by <span>23</span> People</p>
+                    </section>
+
+
+                    <section class="userPostComment px-2 my-3">
+
+                        <p>
+                            <a href="#">muhammad.ali </a> Lorem ipsum dolor sit amet.
+                        </p>
+
+                    </section>
+
+                </section> -->
+                <!-- ********************************************* -->
+                <!-- <section class="userPost postNow p-3 my-3">
+
+                    <section class="d-flex
+                            justify-content-between
+                            align-items-center">
+
+                        <div class="d-flex justify-content-between
+                                align-items-center gap-3">
+                            <figure class="my-0 img-container">
+                                <img src="Assets/Images/1 (6).jpg" alt="">
+                            </figure>
+                            <div class="userPostHead">
+                                <h4>Muhammad Ali</h4>
+                                <span class="time">2 Days Ago. <i class="fas
+                                            fa-globe-americas"></i> </span>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#"><i style="color: #333;" class="me-3
+                                        navIcon fas
+                                        fa-ellipsis-h"></i></a>
+                        </div>
+
+                    </section>
+
+                    <section class="userPostDescription my-3">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, voluptate. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, adipisci.
+                        </p>
+
+
+                    </section>
+                    <section class="userPostImage">
+                        <figure>
+                            <img src="./Assets/Images/1 (4).jpeg" alt="" class="img-fluid">
+                        </figure>
+
+                    </section>
+                    <section class="userPostTags p-3 postNow d-flex gap-4
+                            flex-wrap">
+                        <h5><span class="badge bg-secondary">New</span></h5>
+                        <h5><span class="badge bg-secondary">Hello</span></h5>
+                        <h5><span class="badge bg-secondary">summer</span></h5>
+                        <h5><span class="badge bg-secondary">nature</span></h5>
+                        <h5><span class="badge bg-secondary">Cool</span></h5>
+                        <h5><span class="badge bg-secondary">Instagram</span></h5>
+                        <h5><span class="badge bg-secondary">Facebook</span></h5>
+                        <h5><span class="badge bg-secondary">whatsapp</span></h5>
+                        <h5><span class="badge bg-secondary">Twitter</span></h5>
+                        <h5><span class="badge bg-secondary">New</span></h5>
+                        <h5><span class="badge bg-secondary">summer</span></h5>
+                        <h5><span class="badge bg-secondary">Hello</span></h5>
+                        <h5><span class="badge bg-secondary">Instagram</span></h5>
+                        <h5><span class="badge bg-secondary">Facebook</span></h5>
+                        <h5><span class="badge bg-secondary">nature</span></h5>
+                        <h5><span class="badge bg-secondary">Cool</span></h5>
+                        <h5><span class="badge bg-secondary">whatsapp</span></h5>
+                        <h5><span class="badge bg-secondary">Twitter</span></h5>
+                    </section>
+
+                    <section class="userPostLikes my-3 px-3 d-flex gap-4
+                            align-items-center justify-content-between">
+                        <div>
+
+                            <a id="likePost"><i class="likePostIcon
+                                        navIcon far
+                                        fa-heart"></i></a>
+                            <a href="#"><i class="navIcon far fa-comment"></i></a>
+                            <a href="#"><i class="navIcon px-1 fas
+                                        fa-share-alt"></i></a>
+                        </div>
+                        <div>
+                            <a href="#"><i class="navIcon far fa-bookmark"></i></a>
+                        </div>
+
+                    </section>
+
+                    <section class="userPostLikes d-flex gap-4
+                            align-items-center">
+
+                        <div class="delivered-imgs">
+                            <img src="Assets/Images/20170108_200725.jpg" alt="Customer photo" />
+                            <img src="Assets/Images/20170108_200725.jpg" alt="Customer photo" />
+                            <img src="Assets/Images/20170108_200725.jpg" alt="Customer photo" />
+
+                        </div>
+                        <p class="my-0">liked by <span>23</span> People</p>
+                    </section>
+
+
+                    <section class="userPostComment px-2 my-3">
+
+                        <p>
+                            <a href="#">muhammad.ali </a> Lorem ipsum dolor sit amet.
+                        </p>
+
+                    </section>
+
+                </section>
+ -->
+            </div>
+            <div class="right">
+
+                <section class="PostByTag ms-4 p-3 postNow">
+                    <h2 class="my-4">View Post By Tag Name</h2>
+
+                    <div class="tags gap-0 d-flex gap-4
+                            flex-wrap">
+
+                        <h5><span class="badge bg-secondary">New</span></h5>
+                        <h5><span class="badge bg-secondary">Hello</span></h5>
+                        <h5><span class="badge bg-secondary">summer</span></h5>
+                    </div>
+
+                </section>
+                <hr>
+                <section class="FriendSuggestion ms-4 px-3">
+
+
+
+                    <h2 class="mt-4">Suggested for you.</h2>
+
+                    <div class="mt-4 d-flex align-items-center
+                            justify-content-between">
+                        <div class="d-flex align-items-center gap-4">
+                            <figure class="my-0 group-img-container">
+                                <img src="Assets/Images/20170108_200725.jpg" alt="">
+                            </figure>
+                            <div class="userPostHead">
+                                <h6 class="mb-0">Muhammad Ali</h4>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="addFriendIcon fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <div class="mt-4 d-flex align-items-center
+                            justify-content-between">
+                        <div class="d-flex align-items-center gap-4">
+                            <figure class="my-0 group-img-container">
+                                <img src="Assets/Images/20170108_200725.jpg" alt="">
+                            </figure>
+                            <div class="userPostHead">
+                                <h6 class="mb-0">Muhammad Ali</h4>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="addFriendIcon fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <div class="mt-4 d-flex align-items-center
+                            justify-content-between">
+                        <div class="d-flex align-items-center gap-4">
+                            <figure class="my-0 group-img-container">
+                                <img src="Assets/Images/20170108_200725.jpg" alt="">
+                            </figure>
+                            <div class="userPostHead">
+                                <h6 class="mb-0">Muhammad Ali</h4>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="addFriendIcon fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <div class="mt-4 d-flex align-items-center
+                            justify-content-between">
+                        <div class="d-flex align-items-center gap-4">
+                            <figure class="my-0 group-img-container">
+                                <img src="Assets/Images/20170108_200725.jpg" alt="">
+                            </figure>
+                            <div class="userPostHead">
+                                <h6 class="mb-0">Muhammad Ali</h4>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="addFriendIcon fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <div class="mt-4 d-flex align-items-center
+                            justify-content-between">
+                        <div class="d-flex align-items-center gap-4">
+                            <figure class="my-0 group-img-container">
+                                <img src="Assets/Images/20170108_200725.jpg" alt="">
+                            </figure>
+                            <div class="userPostHead">
+                                <h6 class="mb-0">Muhammad Ali</h4>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="addFriendIcon fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <div class="mt-4 d-flex align-items-center
+                            justify-content-between">
+                        <div class="d-flex align-items-center gap-4">
+                            <figure class="my-0 group-img-container">
+                                <img src="Assets/Images/20170108_200725.jpg" alt="">
+                            </figure>
+                            <div class="userPostHead">
+                                <h6 class="mb-0">Muhammad Ali</h4>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="addFriendIcon fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <div class="mt-4 d-flex align-items-center
+                            justify-content-between">
+                        <div class="d-flex align-items-center gap-4">
+                            <figure class="my-0 group-img-container">
+                                <img src="Assets/Images/20170108_200725.jpg" alt="">
+                            </figure>
+                            <div class="userPostHead">
+                                <h6 class="mb-0">Muhammad Ali</h4>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="addFriendIcon fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <div class="mt-4 d-flex align-items-center
+                            justify-content-between">
+                        <div class="d-flex align-items-center gap-4">
+                            <figure class="my-0 group-img-container">
+                                <img src="Assets/Images/20170108_200725.jpg" alt="">
+                            </figure>
+                            <div class="userPostHead">
+                                <h6 class="mb-0">Muhammad Ali</h4>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="addFriendIcon fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <div class="mt-4 d-flex align-items-center
+                            justify-content-between">
+                        <div class="d-flex align-items-center gap-4">
+                            <figure class="my-0 group-img-container">
+                                <img src="Assets/Images/20170108_200725.jpg" alt="">
+                            </figure>
+                            <div class="userPostHead">
+                                <h6 class="mb-0">Muhammad Ali</h4>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="addFriendIcon fas fa-user-plus"></i>
+                        </div>
+                    </div>
+
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </main>
+
+    </section>
+    <!-- modal 1 -->
+
+    <section class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+
+
+                <div class="mt-5 d-flex align-items-center
+                        justify-content-center">
+
+
+
+
+                    <form class="p-5">
+
+                        <div class="d-flex mb-5 align-items-center gap-3
+                                postNowHead">
+                            <figure class="my-0 img-container">
+                                <img class="profilePicture" src="Assets/Images/20170108_200725.jpg" alt="">
+                            </figure>
+
+                            <!-- <input type="text" placeholder="What on Your mind?" name="" id=""> -->
+                            <h2 class="profileName">Muhammad Ali</h2>
+                        </div>
+                        <main class="d-flex mb-4">
+
+                            <section class="ViewTrans">
+
+
+                                <div class="mb-3">
+                                    <div class="input-parent">
+                                        <label for="profileGender">Gender</label>
+                                        <input type="text" disabled class="form-control" id="profileGender" aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="input-parent">
+                                        <label for="profileDOB">Date of
+                                                birth</label>
+                                        <input type="text" disabled class="form-control" id="profileDOB" aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="input-parent">
+                                        <label for="profileRegisterDate">Register
+                                                date</label>
+                                        <input type="text" disabled class="form-control" id="profileRegisterDate" aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="input-parent">
+                                        <label for="profileEmail">Email</label>
+                                        <input type="text" disabled class="form-control" id="profileEmail" aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="input-parent">
+                                        <label for="profilePhone">Phone</label>
+                                        <input type="text" disabled class="form-control" id="profilePhone" aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+
+                            </section>
+
+                            <section class="mx-3">
+
+                                <div class="mb-3">
+                                    <div class="input-parent">
+                                        <label for="profileState">State</label>
+                                        <input type="text" disabled class="form-control" id="profileState" aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="input-parent">
+                                        <label for="profileStreet">Street</label>
+                                        <input type="text" disabled class="form-control" id="profileStreet" aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="input-parent">
+                                        <label for="profileCity">City</label>
+                                        <input type="text" disabled class="form-control" id="profileCity" aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="input-parent">
+                                        <label for="profileCountry">Country</label>
+                                        <input type="text" disabled class="form-control" id="profileCountry" aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="input-parent">
+                                        <label for="profileTimezone">Timezone</label>
+                                        <input type="text" disabled class="form-control" id="profileTimezone" aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+
+
+
+
+                            </section>
+
+
+                        </main>
+
+
+
+
+
+                        <hr class="line">
+
+                        <div>
+                            <h6 class="text-center">All Rights Reserved &copy; </h3>
+                        </div>
+
+                    </form>
+
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./Assets/scripts/index.js"></script>
+    <!-- <script src="./Assets/scripts/postByTags.js"></script> -->
+
+</body>
+
+</html>
