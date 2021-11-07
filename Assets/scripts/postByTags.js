@@ -3,13 +3,10 @@
 console.log("Running index.js");
 
 var ApiKey = "61836eb8186ebc024cedc6a9";
-// const friendsList = document.querySelector(".friendsList");
-// const middle = document.querySelector(".middle");
 const tags = document.querySelector(".tags");
 
 
-
-// ***********************fetching user data *******************************
+// ***********************fetching Tag data *******************************
 
 const apiResponse = fetch('https://dummyapi.io/data/v1/tag?limit=10', {
     method: 'GET',
@@ -21,21 +18,17 @@ const apiResponse = fetch('https://dummyapi.io/data/v1/tag?limit=10', {
 apiResponse.then(function(response) {
     return response.json();
 }).then(function(data) {
-    console.log(data);
     const userData = data.data;
-    console.log(userData);
-
     renderTags(userData);
 })
 
 
 
 
-// ********************* This function will render user in left side bar *********************
+// ********************* This function will render Tags in left side bar *********************
 function renderTags(arr) {
     arr.forEach(element => {
 
-        // console.log(arr);
         tags.insertAdjacentHTML("beforeend",
             `
             <h4><span  onclick="FetchTagData('${element}')"   class="badge bg-secondary">${element}</span></h4>
@@ -43,53 +36,36 @@ function renderTags(arr) {
 
     });
 
-
-
 }
 
 
 
-// ********************* This function will fetch user data from api *********************
+// ********************* This function will fetch tag data on which user clicked *********************
 function FetchTagData(TagName) {
-    // debugger;
-    let Trimed = TagName.trim();
-    console.log(Trimed);
+    let TrimedTag = TagName.trim();
+    console.log(TrimedTag);
     // TagName = 
 
-    const apiResponse1 = fetch(`https://dummyapi.io/data/v1/tag/${Trimed}/post?limit=10`, {
+    const apiResponse1 = fetch(`https://dummyapi.io/data/v1/tag/${TrimedTag}/post?limit=10`, {
         method: 'GET',
         headers: {
             'app-id': ApiKey,
         }
     })
     apiResponse1.then(function(response) {
-        // console.log(response);
         return response.json();
     }).then(function(data) {
-
-        // console.log("id data");
-        // console.log(data);
         const userData = data.data;
-        // renderUserPostsLoop(userData)
-        console.log(userData);
         renderTagPosts(userData);
-        // console.log();
     })
 
 
 }
 
-
-
-// ********************* This function will render user data in main contnaier *********************
+// ********************* This function will render Tag data in main contnaier *********************
 function renderTagPosts(arr) {
-
     console.log(arr);
-
     arr.forEach(function(element) {
-
-
-        // console.log(element);
 
         userPostContainer.insertAdjacentHTML("afterbegin",
 
@@ -185,4 +161,4 @@ function renderTagPosts(arr) {
 
     });
 
-}   
+}

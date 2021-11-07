@@ -1,5 +1,8 @@
 'use strict'
 
+//this file "Index.js" is the main file of the project in which all the main
+// data will be fetched from api and render in the main container
+
 console.log("Running index.js");
 
 const logout = document.querySelector(".logout");
@@ -28,13 +31,19 @@ const postCommentsApi = "https://dummyapi.io/data/v1/post/60d21af267d0d8992e610b
 
 // ***********************fetching user data *******************************
 
+// ******************* This is Immediately Invoked Function It will Render data of first user*********************
+(function() {
+    const id = "60d0fe4f5311236168a109d3";
+    fetchSpecificUserData(id);
+})();
 
+// this function is responsible for data fetching from api
 const req = fetchApi(userListApi);
 
+// In response list of users will be rendered on left side bar
 req.then(function(response) {
     return response.json();
 }).then(function(data) {
-    // console.log(data);
     const userData = data.data;
     renderUsers(userData);
 })
@@ -46,7 +55,7 @@ req.then(function(response) {
 function renderUsers(arr) {
     let a = 1;
     let profileData = arr;
-    console.log(profileData);
+    // console.log(profileData);
     arr.forEach(element => {
 
         friendsList.insertAdjacentHTML("afterbegin",
@@ -67,15 +76,10 @@ function renderUsers(arr) {
         fa-dot-circle"></i>
         </div>
         </div>
-        
-        
-        
+         
         `)
 
     });
-
-
-
 }
 
 
@@ -85,7 +89,7 @@ function fetchSpecificUserData(id) {
 
     const ar1 = [];
 
-    // *****************************comments********************************
+    // *****************************this api call fetch the user comments*****************
     const req2 = fetchApi(postCommentsApi);
 
     req2.then(function(response) {
@@ -101,6 +105,7 @@ function fetchSpecificUserData(id) {
     })
 
 
+    // this will render the specific user data on which we click
     setTimeout(() => {
         const req1 = fetch(`https://dummyapi.io/data/v1/user/${id}/post?limit=10`, {
             method: 'GET',
@@ -212,9 +217,6 @@ function renderUserPosts(arr, commentArr) {
 
             <section class="userPostComment px-2 my-3">
 
-               
-               
-
                           <div class=" d-flex align-items-center gap-3
                             postNowHead">
                         <figure class="commentContainer my-0 img-container">
@@ -261,12 +263,11 @@ function deleteComment() {
     const commentContainer = document.querySelector(".commentContainer");
     console.log(commentContainer);
     commentContainer.style.display = "none";
-    // alert("hello");
-
 }
 
-function fetchUserProfile(id) {
 
+// this fuction will fetch user profile from api to display in modal
+function fetchUserProfile(id) {
     const req1 = fetch(`https://dummyapi.io/data/v1/user/${id}`, {
         method: 'GET',
         headers: {
@@ -274,28 +275,14 @@ function fetchUserProfile(id) {
         }
     })
     req1.then(function(response) {
-        // console.log(response);
         return response.json();
     }).then(function(data) {
-
-        console.log(data);
-        // const ViewAllKey = document.querySelector("#ViewAllKey");
-        // console.log(ViewAllKey);
-        // ViewAllKey.setAttribute("value", data.firstName);
-
         setUserProfileAttributes(data);
-        // const userData = data.data;
-        // console.log("id data");
-        // console.log(ar1[0]);
-
-        // renderUserPostsLoop(userData)
-        // console.log(userData);
-        // renderUserPosts(userData, ar1);
-        // console.log();
     })
 
 }
 
+// this funtion will set user profile data in  modal
 function setUserProfileAttributes(object) {
     const profilePicture = document.querySelector(".profilePicture");
     const profileName = document.querySelector(".profileName");
@@ -338,39 +325,9 @@ function fetchApi(ApiURL) {
     return req;
 }
 
-// async function test() {
-
-//     const ar = [];
-//     const req2 = fetchApi(userListApi);
-//     req2.then(function(response) {
-//         return response.json();
-//     }).then(function(data) {
-
-//         // console.log(data);
-//         // return data;
-//         const userData = data.data;
-//         ar.push(userData);
-//     }).catch(function(error) {
-//         console.log(error);
-//     })
-
-//     return  ar;
-// }
-
-// const testdata = test();
-
-// setTimeout(() => {
-//     console.log(testdata[0]);
-
-// }, 3000);
 
 
-
-
-
-// ************************load posts********************
-
-
+// *************this function will load posts after reaching at the end of the page********************
 window.addEventListener("scroll", () => {
     const scrollHeight = document.documentElement.scrollHeight;
     const scrollTop = document.documentElement.scrollTop;
@@ -466,8 +423,6 @@ window.addEventListener("scroll", () => {
 </section>
 
 `;
-
-
 
                 userPostContainer.insertAdjacentHTML("beforeend",
 

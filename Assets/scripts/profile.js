@@ -3,6 +3,15 @@
 console.log("I'm user profile");
 
 
+/*
+Purpose: This file profile.js is responsible to show user data who is logged in.
+and user can also update his data from this page
+*/
+
+
+
+
+// this code will redirect user on the login page in user is not registered
 const logout = document.querySelector(".logout");
 logout.addEventListener('click', function() {
     localStorage.setItem("currentUser", "");
@@ -11,19 +20,10 @@ logout.addEventListener('click', function() {
 
 
 const PageRedirect = localStorage.getItem("currentUser");
-console.log(PageRedirect);
 
 if (PageRedirect === "") {
     window.location.href = "login.html";
 }
-
-
-
-/*
-Purpose: This file profile.js is responsible to show user data who is logged in.
-and user can also update his data from this page
-*/
-
 
 
 //Getting all the fields of update profile form
@@ -34,7 +34,6 @@ let ProfileConPassword = document.querySelector("#ProfileConPassword");
 
 //Gatinng the current user who is logged In
 const user = localStorage.getItem("currentUser");
-
 
 
 // getting all the data keys from local storage and store it into a variable

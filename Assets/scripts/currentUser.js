@@ -6,10 +6,7 @@ Purpose: This file CurrentUser.js is responsible to Render Current user name int
 */
 
 
-
 const user1 = localStorage.getItem("currentUser");
-
-
 const keysOfLS = Object.keys(localStorage);
 for (let key of keysOfLS) {
     // console.log(key);

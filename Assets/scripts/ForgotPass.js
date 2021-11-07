@@ -10,14 +10,14 @@ Purpose: This file ForgotPass.js is responsible recover the password if email is
 //Getting fields in which user enters data
 
 let ForgotBtn = document.querySelector(".ForgotBtn");
-console.log(ForgotBtn);
+
+
+
+
 
 // When we click on "Recover Pass button" this function will be invoked
 // function ForgotPass() {
-
 ForgotBtn.addEventListener('click', function() {
-
-
 
     let ForgotEmail = document.querySelector("#ForgotPasswordEmail");
     let forgotPas = document.querySelector("#password");
@@ -46,11 +46,8 @@ ForgotBtn.addEventListener('click', function() {
 
 
     } else {
-        alert("hello");
+        alert("Please enter the Email");
     }
-
-
-
 })
 
 

@@ -22,7 +22,6 @@ let accountCreated = document.querySelector(".accountCreated");
 
 
 // When we click on sign up now button this function will be invoked
-// function signUpForm() 
 
 
 SignUpBtn.addEventListener("click", function(e) {

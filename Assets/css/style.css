@@ -17,7 +17,6 @@ body {
 
 .navbar {
     height: 5rem !important;
-    /* position: relative; */
 }
 
 .container {
@@ -31,8 +30,6 @@ a {
 
 .navIcon {
     font-size: 2rem;
-    /* background-color: rosybrown; */
-    stroke: rosybrown;
 }
 
 .search-container {
@@ -64,7 +61,6 @@ a {
     margin-top: 3rem;
     padding: 2rem;
     padding-top: 5rem;
-    /* background-color: blueviolet; */
     border-radius: 1rem;
 }
 
@@ -75,9 +71,6 @@ a {
 
 .left {
     border-radius: 0.8rem;
-    /* border-top-left-radius: 0.8rem;
-    border-bottom-left-radius: 0.8rem; */
-    /* border: 2px solid green; */
     flex-basis: 24%;
     background-color: white;
     height: 85vh;
@@ -92,17 +85,12 @@ a {
 }
 
 .right {
-    /* border-top-right-radius: 0.8rem; */
-    /* border-bottom-right-radius: 0.8rem; */
     border-radius: 0.8rem;
-    /* border: 2px solid blueviolet; */
     flex-basis: 24%;
     background-color: white;
     height: 85vh;
-    /* margin-top: 5rem; */
     position: sticky;
     top: 9rem;
-    /* overflow-y: scroll; */
 }
 
 
@@ -125,7 +113,6 @@ a {
 
 .SearchFriend {
     margin: auto;
-    /* background-color: yellow; */
 }
 
 .search-contianer {
@@ -139,7 +126,6 @@ a {
 }
 
 .postNowFoot a {
-    /* width: 100% !important; */
     text-decoration: none;
 }
 
@@ -226,7 +212,6 @@ a {
 }
 
 .commentInput:focus {
-    /* border: 1px solid #777; */
     outline: 1px solid #999;
 }
 
@@ -253,9 +238,11 @@ label {
     background-color: white;
     height: 25vh;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
-.FriendSuggestion {
+.FriendSuggestion,
+.yourGroup {
     background-color: white;
     height: 45%;
     overflow-y: scroll;
@@ -328,7 +315,6 @@ label {
 
 .navBar1 ul li {
     list-style: none;
-    /* padding: 0; */
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-top: 0;
@@ -376,14 +362,10 @@ label {
 
 .activeIcon a {
     color: white;
-    /* font-size: 1.5rem; */
 }
 
 .activeIcon a i {
-    /* padding-top: 2px; */
     color: white;
-    /* font-size: 1.5rem; */
-    /* font-size: 1.5rem; */
 }
 
 .badge {
