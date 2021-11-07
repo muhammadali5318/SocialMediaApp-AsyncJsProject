@@ -3,8 +3,8 @@
 console.log("Running index.js");
 
 var ApiKey = "61836eb8186ebc024cedc6a9";
-const friendsList = document.querySelector(".friendsList");
-const middle = document.querySelector(".middle");
+// const friendsList = document.querySelector(".friendsList");
+// const middle = document.querySelector(".middle");
 const tags = document.querySelector(".tags");
 
 
@@ -25,20 +25,20 @@ apiResponse.then(function(response) {
     const userData = data.data;
     console.log(userData);
 
-    renderUsers(userData);
+    renderTags(userData);
 })
 
 
 
 
 // ********************* This function will render user in left side bar *********************
-function renderUsers(arr) {
+function renderTags(arr) {
     arr.forEach(element => {
 
         // console.log(arr);
         tags.insertAdjacentHTML("beforeend",
             `
-            <h4><span  onclick="hello('${element}')"   class="badge bg-secondary">${element}</span></h4>
+            <h4><span  onclick="FetchTagData('${element}')"   class="badge bg-secondary">${element}</span></h4>
         `)
 
     });
@@ -50,7 +50,7 @@ function renderUsers(arr) {
 
 
 // ********************* This function will fetch user data from api *********************
-function hello(TagName) {
+function FetchTagData(TagName) {
     // debugger;
     let Trimed = TagName.trim();
     console.log(Trimed);
@@ -71,8 +71,8 @@ function hello(TagName) {
         // console.log(data);
         const userData = data.data;
         // renderUserPostsLoop(userData)
-        // console.log(userData);
-        renderUserPosts(userData);
+        console.log(userData);
+        renderTagPosts(userData);
         // console.log();
     })
 
@@ -82,7 +82,7 @@ function hello(TagName) {
 
 
 // ********************* This function will render user data in main contnaier *********************
-function renderUserPosts(arr) {
+function renderTagPosts(arr) {
 
     console.log(arr);
 
@@ -91,7 +91,7 @@ function renderUserPosts(arr) {
 
         // console.log(element);
 
-        middle.insertAdjacentHTML("beforeend",
+        userPostContainer.insertAdjacentHTML("afterbegin",
 
             `
             <section class="userPost postNow p-3 my-3">
@@ -185,4 +185,4 @@ function renderUserPosts(arr) {
 
     });
 
-}
+}   

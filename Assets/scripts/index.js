@@ -2,6 +2,21 @@
 
 console.log("Running index.js");
 
+const logout = document.querySelector(".logout");
+logout.addEventListener('click', function() {
+    // alert("clicked")
+    localStorage.setItem("currentUser", "");
+    window.location.href = "login.html";
+})
+
+
+const PageRedirect = localStorage.getItem("currentUser");
+console.log(PageRedirect);
+
+// if (PageRedirect === "") {
+//     window.location.href = "login.html";
+// } else {
+
 
 
 
@@ -9,7 +24,7 @@ console.log("Running index.js");
 
 var ApiKey = "61836eb8186ebc024cedc6a9";
 const friendsList = document.querySelector(".friendsList");
-const middle = document.querySelector(".middle");
+const userPostContainer = document.querySelector(".userPostContainer");
 const userListApi = "https://dummyapi.io/data/v1/user?limit=10";
 const postCommentsApi = "https://dummyapi.io/data/v1/post/60d21af267d0d8992e610b8d/comment?limit=10";
 
@@ -120,7 +135,7 @@ function renderUserPosts(arr, commentArr) {
     arr.forEach(function(element) {
 
 
-        middle.insertAdjacentHTML("beforeend",
+        userPostContainer.insertAdjacentHTML("afterbegin",
 
             `
             <section class="userPost postNow p-3 my-3">
@@ -457,7 +472,7 @@ window.addEventListener("scroll", () => {
 
 
 
-                middle.insertAdjacentHTML("beforeend",
+                userPostContainer.insertAdjacentHTML("beforeend",
 
                     htmlData
                 )
@@ -469,5 +484,8 @@ window.addEventListener("scroll", () => {
     }
 
 })
+
+
+// }
 
 // ************************load posts end********************

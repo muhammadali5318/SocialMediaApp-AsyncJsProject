@@ -24,8 +24,26 @@
 }
 
 @media (max-width: 750px) {
-    .left {
+    .toga {
+        /* display: block; */
+        visibility: visible;
+    }
+    .mediaToggle {
         display: none;
+    }
+    .left {
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        flex-basis: 97%;
+        transition: all 1s linear;
+        z-index: 2;
+    }
+    .close {
+        display: block;
+    }
+    .main {
+        padding-top: 0 !important;
     }
     .middle {
         flex-basis: 97%;
@@ -40,7 +58,20 @@
         position: absolute;
         padding: 2rem;
         padding-top: 5rem;
-        background-color: blueviolet;
+        background-color: #f0f2f5;
         border-radius: 1rem;
+    }
+    .modalContainer {
+        width: 97vw;
+    }
+    .mediaNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4rem;
+        background-color: white;
+        font-size: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }

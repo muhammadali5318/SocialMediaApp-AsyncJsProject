@@ -8,7 +8,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,108 +24,85 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light
-            bg-light fixed-top">
+    <!-- <nav class="mediaNav">
+        <div>
+            <a href="">Social Media App</a>
+
+        </div>
+        <div>
+
+        </div>
+    </nav> -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+            <a class="ms-3 navbar-brand" href="#">Social Media App</a>
+
+            <a class="toga" href="#">
+                <i class="fas fa-bars"></i>
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li>
+
+                </li>
+            </ul>
+            <section class="pe-2 me-5">
+                <ul class="d-flex flex-nowrap flex-row align-items-center
+                        justify-content-between gap-3 navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link WelcomeTag" href="userProfile.html" id="navbarDropdown" role="button">
+
+                        </a>
+
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another
-                                        action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something
-                                        else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link logout" href="#" id="navbarDropdown" role="button">
+                                Logout </a>
+
                     </li>
                 </ul>
-            </div>
-            <section class="d-flex">
-
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
             </section>
+
         </div>
     </nav>
-
 
     <section class="main_section">
 
         <main class="main container">
-            <aside class="left">
+            <aside class="left mediaToggle">
 
-                <div class="d-flex my-3 px-4 search-contianer">
+
+                <a href="#" class="text-dark m-3 close navIcon"><i
+                            class="fas
+                            fa-times"></i></a>
+                <div class="d-flex my-3 px-4
+                        search-contianer">
                     <input type="text" class="SearchFriend" placeholder="Search" name="" id="">
                     <i class="search fas fa-search"></i>
                 </div>
 
+
+
                 <hr class="mt-4">
 
                 <section class="mx-4 FriendSection">
-
-                    <section class="PostByTag ms-4 p-3 postNow">
+                    <section class="PostByTag ms-4 p-3
+                            postNow">
                         <h2 class="my-4">View Post By Tag Name</h2>
 
-                        <div class="tags gap-0 d-flex gap-4
+                        <div class="tags gap-0 d-flex
+                                gap-4
                                 flex-wrap">
 
-                            <h5><span class="badge bg-secondary">New</span></h5>
-                            <h5><span class="badge bg-secondary">Hello</span></h5>
-                            <h5><span class="badge bg-secondary">summer</span></h5>
-                            <h5><span class="badge bg-secondary">New</span></h5>
-                            <h5><span class="badge bg-secondary">Hello</span></h5>
-                            <h5><span class="badge bg-secondary">summer</span></h5>
-                            <h5><span class="badge bg-secondary">New</span></h5>
-                            <h5><span class="badge bg-secondary">Hello</span></h5>
-                            <h5><span class="badge bg-secondary">summer</span></h5>
-                            <h5><span class="badge bg-secondary">New</span></h5>
-                            <h5><span class="badge bg-secondary">Hello</span></h5>
-                            <h5><span class="badge bg-secondary">summer</span></h5>
-                            <h5><span class="badge bg-secondary">New</span></h5>
-                            <h5><span class="badge bg-secondary">Hello</span></h5>
-                            <h5><span class="badge bg-secondary">summer</span></h5>
-                            <h5><span class="badge bg-secondary">New</span></h5>
-                            <h5><span class="badge bg-secondary">Hello</span></h5>
-                            <h5><span class="badge bg-secondary">summer</span></h5>
-                            <h5><span class="badge bg-secondary">New</span></h5>
-                            <h5><span class="badge bg-secondary">Hello</span></h5>
-                            <h5><span class="badge bg-secondary">summer</span></h5>
-                            <h5><span class="badge bg-secondary">New</span></h5>
-                            <h5><span class="badge bg-secondary">Hello</span></h5>
-                            <h5><span class="badge bg-secondary">summer</span></h5>
-                            <h5><span class="badge bg-secondary">New</span></h5>
-                            <h5><span class="badge bg-secondary">Hello</span></h5>
-                            <h5><span class="badge bg-secondary">summer</span></h5>
+
                         </div>
 
                     </section>
 
 
                     <h2 class="mt-5">Friends</h2>
-
                     <section class="friendsList">
 
                         <!-- render data here from js -->
-
                     </section>
 
                 </section>
@@ -134,37 +111,67 @@
 
             <div class="middle">
 
+
+                <div class="navBar1">
+                    <ul>
+                        <li class="activeIcon">
+                            <a href="#"><i class="fas fa-home"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-camera-retro"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-users"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-bell"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+
                 <section class="postNow my-3 p-3">
 
-                    <div class="d-flex align-items-center gap-3
+                    <div class="d-flex
+                            align-items-center gap-3
                             postNowHead">
-                        <figure class="my-0 img-container">
+                        <figure class="my-0
+                                img-container">
                             <img src="Assets/Images/20170108_200725.jpg" alt="">
                         </figure>
 
-                        <input type="text" placeholder="What on Your mind?" name="" id="">
+                        <input type="text" placeholder="What on Your
+                                mind?" name="" id="">
 
                     </div>
                     <hr>
-                    <div class="d-flex align-items-center
-                            justify-content-around postNowFoot">
+                    <div class="d-flex
+                            align-items-center
+                            justify-content-around
+                            postNowFoot">
 
-                        <a class="postNowBtn px-3 py-2 d-flex
+                        <a class="postNowBtn px-3 py-2
+                                d-flex
                                 align-items-center
                                 gap-2" href="">
-                            <i style="color: #c92a2a;" class="navIcon fas
+                            <i style="color: #c92a2a;" class="navIcon
+                                    fas
                                     fa-video"></i>Live Video
                         </a>
-                        <a class="postNowBtn d-flex px-3 py-2
+                        <a class="postNowBtn d-flex px-3
+                                py-2
                                 align-items-center
                                 gap-2" href="">
-                            <i style="color: #51cf66;" class="navIcon fas
+                            <i style="color: #51cf66;" class="navIcon
+                                    fas
                                     fa-images"></i>Feeling/Activity
                         </a>
-                        <a class="postNowBtn px-3 py-2 d-flex
+                        <a class="postNowBtn px-3 py-2
+                                d-flex
                                 align-items-center
                                 gap-2" href="">
-                            <i style="color: #fcc419;" class="navIcon far
+                            <i style="color: #fcc419;" class="navIcon
+                                    far
                                     fa-laugh"></i> Photos/Videos
                         </a>
                     </div>
@@ -173,35 +180,44 @@
 
                 <section class="postNow my-3 p-3">
 
-                    <div class="d-flex align-items-center gap-3
+                    <div class="d-flex
+                            align-items-center gap-3
                             postNowHead">
 
-                        <a class="d-flex align-items-center gap-2
+                        <a class="d-flex
+                                align-items-center gap-2
                                 createRoom" href="">
-                            <i class="navIcon fas fa-video"></i>Create Room
+                            <i class="navIcon fas
+                                    fa-video"></i>Create Room
                         </a>
 
-                        <figure class="my-0 img-container">
+                        <figure class="my-0
+                                img-container">
                             <img src="Assets/Images/20170108_200725.jpg" alt="">
                         </figure>
 
-                        <figure class="my-0 img-container">
+                        <figure class="my-0
+                                img-container">
                             <img src="Assets/Images/20170108_200725.jpg" alt="">
                         </figure>
 
-                        <figure class="my-0 img-container">
+                        <figure class="my-0
+                                img-container">
                             <img src="Assets/Images/20170108_200725.jpg" alt="">
                         </figure>
 
-                        <figure class="my-0 img-container">
+                        <figure class="my-0
+                                img-container">
                             <img src="Assets/Images/20170108_200725.jpg" alt="">
                         </figure>
 
-                        <figure class="my-0 img-container">
+                        <figure class="my-0
+                                img-container">
                             <img src="Assets/Images/20170108_200725.jpg" alt="">
                         </figure>
 
-                        <figure class="my-0 img-container">
+                        <figure class="my-0
+                                img-container">
                             <img src="Assets/Images/20170108_200725.jpg" alt="">
                         </figure>
 
@@ -209,6 +225,13 @@
                     </div>
 
                 </section>
+
+                <section class="userPostContainer">
+
+                </section>
+
+
+
             </div>
 
 
@@ -232,166 +255,216 @@
                 </section> -->
                 <div class="yourGroup p-3 my-4">
                     <h2 class="px-3">Your groups</h2>
-
-                    <div class="LeftBarFriends mt-4 px-3 py-1 d-flex
+                    <div class="LeftBarFriends mt-4 px-3
+                            py-1 d-flex
                             align-items-center gap-4">
-                        <figure class="my-0 group-img-container">
+                        <figure class="my-0
+                                group-img-container">
                             <img src="Assets/Images/20170108_200725.jpg" alt="">
                         </figure>
                         <div class="userPostHead">
-                            <h6 class="mb-0">Muhammad Ali</h4>
+                            <h6 class="mb-0">Muhammad Ali
+                                </h4>
                         </div>
                     </div>
-                    <div class="LeftBarFriends mt-4 py-1 px-3 d-flex
+                    <div class="LeftBarFriends mt-4 py-1
+                            px-3 d-flex
                             align-items-center gap-4">
-                        <figure class="my-0 group-img-container">
+                        <figure class="my-0
+                                group-img-container">
                             <img src="Assets/Images/20170108_200725.jpg" alt="">
                         </figure>
                         <div class="userPostHead">
-                            <h6 class="mb-0">Muhammad Ali</h4>
+                            <h6 class="mb-0">Muhammad Ali
+                                </h4>
                         </div>
                     </div>
                 </div>
                 <hr>
-                <section class="FriendSuggestion ms-4 px-3">
+                <section class="FriendSuggestion ms-4
+                        px-3">
 
 
 
                     <h2 class="mt-4">Suggested for you.</h2>
-
-                    <div class="mt-4 d-flex align-items-center
+                    <div class="mt-4 d-flex
+                            align-items-center
                             justify-content-between">
-                        <div class="d-flex align-items-center gap-4">
-                            <figure class="my-0 group-img-container">
+                        <div class="d-flex
+                                align-items-center gap-4">
+                            <figure class="my-0
+                                    group-img-container">
                                 <img src="Assets/Images/20170108_200725.jpg" alt="">
                             </figure>
                             <div class="userPostHead">
-                                <h6 class="mb-0">Muhammad Ali</h4>
+                                <h6 class="mb-0">Muhammad Ali
+                                    </h4>
                             </div>
                         </div>
 
                         <div>
-                            <i class="addFriendIcon fas fa-user-plus"></i>
+                            <i class="addFriendIcon fas
+                                    fa-user-plus"></i>
                         </div>
                     </div>
-                    <div class="mt-4 d-flex align-items-center
+                    <div class="mt-4 d-flex
+                            align-items-center
                             justify-content-between">
-                        <div class="d-flex align-items-center gap-4">
-                            <figure class="my-0 group-img-container">
+                        <div class="d-flex
+                                align-items-center gap-4">
+                            <figure class="my-0
+                                    group-img-container">
                                 <img src="Assets/Images/20170108_200725.jpg" alt="">
                             </figure>
                             <div class="userPostHead">
-                                <h6 class="mb-0">Muhammad Ali</h4>
+                                <h6 class="mb-0">Muhammad Ali
+                                    </h4>
                             </div>
                         </div>
 
                         <div>
-                            <i class="addFriendIcon fas fa-user-plus"></i>
+                            <i class="addFriendIcon fas
+                                    fa-user-plus"></i>
                         </div>
                     </div>
-                    <div class="mt-4 d-flex align-items-center
+                    <div class="mt-4 d-flex
+                            align-items-center
                             justify-content-between">
-                        <div class="d-flex align-items-center gap-4">
-                            <figure class="my-0 group-img-container">
+                        <div class="d-flex
+                                align-items-center gap-4">
+                            <figure class="my-0
+                                    group-img-container">
                                 <img src="Assets/Images/20170108_200725.jpg" alt="">
                             </figure>
                             <div class="userPostHead">
-                                <h6 class="mb-0">Muhammad Ali</h4>
+                                <h6 class="mb-0">Muhammad Ali
+                                    </h4>
                             </div>
                         </div>
 
                         <div>
-                            <i class="addFriendIcon fas fa-user-plus"></i>
+                            <i class="addFriendIcon fas
+                                    fa-user-plus"></i>
                         </div>
                     </div>
-                    <div class="mt-4 d-flex align-items-center
+                    <div class="mt-4 d-flex
+                            align-items-center
                             justify-content-between">
-                        <div class="d-flex align-items-center gap-4">
-                            <figure class="my-0 group-img-container">
+                        <div class="d-flex
+                                align-items-center gap-4">
+                            <figure class="my-0
+                                    group-img-container">
                                 <img src="Assets/Images/20170108_200725.jpg" alt="">
                             </figure>
                             <div class="userPostHead">
-                                <h6 class="mb-0">Muhammad Ali</h4>
+                                <h6 class="mb-0">Muhammad Ali
+                                    </h4>
                             </div>
                         </div>
 
                         <div>
-                            <i class="addFriendIcon fas fa-user-plus"></i>
+                            <i class="addFriendIcon fas
+                                    fa-user-plus"></i>
                         </div>
                     </div>
-                    <div class="mt-4 d-flex align-items-center
+                    <div class="mt-4 d-flex
+                            align-items-center
                             justify-content-between">
-                        <div class="d-flex align-items-center gap-4">
-                            <figure class="my-0 group-img-container">
+                        <div class="d-flex
+                                align-items-center gap-4">
+                            <figure class="my-0
+                                    group-img-container">
                                 <img src="Assets/Images/20170108_200725.jpg" alt="">
                             </figure>
                             <div class="userPostHead">
-                                <h6 class="mb-0">Muhammad Ali</h4>
+                                <h6 class="mb-0">Muhammad Ali
+                                    </h4>
                             </div>
                         </div>
 
                         <div>
-                            <i class="addFriendIcon fas fa-user-plus"></i>
+                            <i class="addFriendIcon fas
+                                    fa-user-plus"></i>
                         </div>
                     </div>
-                    <div class="mt-4 d-flex align-items-center
+                    <div class="mt-4 d-flex
+                            align-items-center
                             justify-content-between">
-                        <div class="d-flex align-items-center gap-4">
-                            <figure class="my-0 group-img-container">
+                        <div class="d-flex
+                                align-items-center gap-4">
+                            <figure class="my-0
+                                    group-img-container">
                                 <img src="Assets/Images/20170108_200725.jpg" alt="">
                             </figure>
                             <div class="userPostHead">
-                                <h6 class="mb-0">Muhammad Ali</h4>
+                                <h6 class="mb-0">Muhammad Ali
+                                    </h4>
                             </div>
                         </div>
 
                         <div>
-                            <i class="addFriendIcon fas fa-user-plus"></i>
+                            <i class="addFriendIcon fas
+                                    fa-user-plus"></i>
                         </div>
                     </div>
-                    <div class="mt-4 d-flex align-items-center
+                    <div class="mt-4 d-flex
+                            align-items-center
                             justify-content-between">
-                        <div class="d-flex align-items-center gap-4">
-                            <figure class="my-0 group-img-container">
+                        <div class="d-flex
+                                align-items-center gap-4">
+                            <figure class="my-0
+                                    group-img-container">
                                 <img src="Assets/Images/20170108_200725.jpg" alt="">
                             </figure>
                             <div class="userPostHead">
-                                <h6 class="mb-0">Muhammad Ali</h4>
+                                <h6 class="mb-0">Muhammad Ali
+                                    </h4>
                             </div>
                         </div>
 
                         <div>
-                            <i class="addFriendIcon fas fa-user-plus"></i>
+                            <i class="addFriendIcon fas
+                                    fa-user-plus"></i>
                         </div>
                     </div>
-                    <div class="mt-4 d-flex align-items-center
+                    <div class="mt-4 d-flex
+                            align-items-center
                             justify-content-between">
-                        <div class="d-flex align-items-center gap-4">
-                            <figure class="my-0 group-img-container">
+                        <div class="d-flex
+                                align-items-center gap-4">
+                            <figure class="my-0
+                                    group-img-container">
                                 <img src="Assets/Images/20170108_200725.jpg" alt="">
                             </figure>
                             <div class="userPostHead">
-                                <h6 class="mb-0">Muhammad Ali</h4>
+                                <h6 class="mb-0">Muhammad Ali
+                                    </h4>
                             </div>
                         </div>
 
                         <div>
-                            <i class="addFriendIcon fas fa-user-plus"></i>
+                            <i class="addFriendIcon fas
+                                    fa-user-plus"></i>
                         </div>
                     </div>
-                    <div class="mt-4 d-flex align-items-center
+                    <div class="mt-4 d-flex
+                            align-items-center
                             justify-content-between">
-                        <div class="d-flex align-items-center gap-4">
-                            <figure class="my-0 group-img-container">
+                        <div class="d-flex
+                                align-items-center gap-4">
+                            <figure class="my-0
+                                    group-img-container">
                                 <img src="Assets/Images/20170108_200725.jpg" alt="">
                             </figure>
                             <div class="userPostHead">
-                                <h6 class="mb-0">Muhammad Ali</h4>
+                                <h6 class="mb-0">Muhammad Ali
+                                    </h4>
                             </div>
                         </div>
 
                         <div>
-                            <i class="addFriendIcon fas fa-user-plus"></i>
+                            <i class="addFriendIcon fas
+                                    fa-user-plus"></i>
                         </div>
                     </div>
 
@@ -423,28 +496,30 @@
 
 
 
-                <div class="mt-5 d-flex align-items-center
+                <div class="mt-5 d-flex
+                        align-items-center
                         justify-content-center">
 
 
 
 
-                    <form style="width: 50vw;" class="p-5">
-
-                        <div class="d-flex mb-5 align-items-center gap-3
+                    <form class="modalContainer p-5">
+                        <div class="d-flex mb-5
+                                align-items-center gap-3
                                 postNowHead">
-                            <figure class="my-0 img-container">
+                            <figure class="my-0
+                                    img-container">
                                 <img class="profilePicture" src="Assets/Images/20170108_200725.jpg" alt="">
                             </figure>
 
                             <!-- <input type="text" placeholder="What on Your mind?" name="" id=""> -->
-                            <h2 class="profileName">Muhammad Ali</h2>
+                            <h2 class="profileName">Muhammad Ali
+                            </h2>
                         </div>
                         <main class="modalInput d-flex
-                                justify-content-between gap-3 mb-4">
+                                justify-content-between
+                                gap-3 mb-4">
                             <section class="modalLeftSection">
-
-
                                 <div class="mb-3">
                                     <div class="input-parent">
                                         <label for="profileGender">Gender</label>
@@ -453,7 +528,8 @@
                                 </div>
                                 <div class="mb-3">
                                     <div class="input-parent">
-                                        <label for="profileDOB">Date of
+                                        <label for="profileDOB">Date
+                                                of
                                                 birth</label>
                                         <input type="text" disabled class="form-control" id="profileDOB" aria-describedby="emailHelp">
                                     </div>
@@ -481,7 +557,6 @@
                             </section>
 
                             <section class="modalLeftSection">
-
                                 <div class="mb-3">
                                     <div class="input-parent">
                                         <label for="profileState">State</label>
@@ -529,7 +604,8 @@
                         <hr class="line">
 
                         <div>
-                            <h6 class="text-center">All Rights Reserved &copy; </h3>
+                            <h6 class="text-center">All Rights Reserved &copy;
+                                </h3>
                         </div>
 
                     </form>
@@ -546,8 +622,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./Assets/scripts/index.js"></script>
-    <!-- <script src="./Assets/scripts/postByTags.js"></script> -->
+    <script src="./Assets/scripts/postByTags.js"></script>
+    <script src="./Assets/scripts/toggle.js"></script>
 
+    <script src="./Assets/scripts/currentUser.js"></script>
 </body>
 
 </html>

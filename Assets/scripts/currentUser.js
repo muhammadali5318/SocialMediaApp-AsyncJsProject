@@ -21,10 +21,9 @@ for (let key of keysOfLS) {
 
 
         welcomeTag.insertAdjacentHTML("afterbegin", `
+        Welcome ${CurrentUserData.name}
 
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Welcome ${CurrentUserData.name}
-                                            </a>
+
         `);
     }
 }
