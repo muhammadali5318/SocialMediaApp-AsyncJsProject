@@ -200,7 +200,8 @@ a {
 
 .FriendSection h2,
 .PostByTag h2,
-.FriendSuggestion h2 {
+.FriendSuggestion h2,
+.yourGroup h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 1.1rem;
@@ -250,7 +251,7 @@ label {
 
 .PostByTag {
     background-color: white;
-    height: 50%;
+    height: 25vh;
     overflow-y: scroll;
 }
 
@@ -267,4 +268,12 @@ label {
 .addFriendIcon {
     font-size: 1.6rem;
     color: #333;
+}
+
+.modalInput {
+    font-family: inherit;
+}
+
+.modalLeftSection {
+    width: 50%;
 }

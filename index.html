@@ -71,7 +71,7 @@
     <section class="main_section">
 
         <main class="main container">
-            <div class="left">
+            <aside class="left">
 
                 <div class="d-flex my-3 px-4 search-contianer">
                     <input type="text" class="SearchFriend" placeholder="Search" name="" id="">
@@ -82,26 +82,43 @@
 
                 <section class="mx-4 FriendSection">
 
-                    <h2>Your groups</h2>
+                    <section class="PostByTag ms-4 p-3 postNow">
+                        <h2 class="my-4">View Post By Tag Name</h2>
 
-                    <div class="LeftBarFriends mt-4 px-3 py-1 d-flex
-                            align-items-center gap-4">
-                        <figure class="my-0 group-img-container">
-                            <img src="Assets/Images/20170108_200725.jpg" alt="">
-                        </figure>
-                        <div class="userPostHead">
-                            <h6 class="mb-0">Muhammad Ali</h4>
+                        <div class="tags gap-0 d-flex gap-4
+                                flex-wrap">
+
+                            <h5><span class="badge bg-secondary">New</span></h5>
+                            <h5><span class="badge bg-secondary">Hello</span></h5>
+                            <h5><span class="badge bg-secondary">summer</span></h5>
+                            <h5><span class="badge bg-secondary">New</span></h5>
+                            <h5><span class="badge bg-secondary">Hello</span></h5>
+                            <h5><span class="badge bg-secondary">summer</span></h5>
+                            <h5><span class="badge bg-secondary">New</span></h5>
+                            <h5><span class="badge bg-secondary">Hello</span></h5>
+                            <h5><span class="badge bg-secondary">summer</span></h5>
+                            <h5><span class="badge bg-secondary">New</span></h5>
+                            <h5><span class="badge bg-secondary">Hello</span></h5>
+                            <h5><span class="badge bg-secondary">summer</span></h5>
+                            <h5><span class="badge bg-secondary">New</span></h5>
+                            <h5><span class="badge bg-secondary">Hello</span></h5>
+                            <h5><span class="badge bg-secondary">summer</span></h5>
+                            <h5><span class="badge bg-secondary">New</span></h5>
+                            <h5><span class="badge bg-secondary">Hello</span></h5>
+                            <h5><span class="badge bg-secondary">summer</span></h5>
+                            <h5><span class="badge bg-secondary">New</span></h5>
+                            <h5><span class="badge bg-secondary">Hello</span></h5>
+                            <h5><span class="badge bg-secondary">summer</span></h5>
+                            <h5><span class="badge bg-secondary">New</span></h5>
+                            <h5><span class="badge bg-secondary">Hello</span></h5>
+                            <h5><span class="badge bg-secondary">summer</span></h5>
+                            <h5><span class="badge bg-secondary">New</span></h5>
+                            <h5><span class="badge bg-secondary">Hello</span></h5>
+                            <h5><span class="badge bg-secondary">summer</span></h5>
                         </div>
-                    </div>
-                    <div class="LeftBarFriends mt-4 py-1 px-3 d-flex
-                            align-items-center gap-4">
-                        <figure class="my-0 group-img-container">
-                            <img src="Assets/Images/20170108_200725.jpg" alt="">
-                        </figure>
-                        <div class="userPostHead">
-                            <h6 class="mb-0">Muhammad Ali</h4>
-                        </div>
-                    </div>
+
+                    </section>
+
 
                     <h2 class="mt-5">Friends</h2>
 
@@ -113,9 +130,7 @@
 
                 </section>
 
-            </div>
-
-
+            </aside>
 
             <div class="middle">
 
@@ -203,7 +218,7 @@
 
             <div class="right">
 
-                <section class="PostByTag ms-4 p-3 postNow">
+                <!-- <section class="PostByTag ms-4 p-3 postNow">
                     <h2 class="my-4">View Post By Tag Name</h2>
 
                     <div class="tags gap-0 d-flex gap-4
@@ -214,7 +229,29 @@
                         <h5><span class="badge bg-secondary">summer</span></h5>
                     </div>
 
-                </section>
+                </section> -->
+                <div class="yourGroup p-3 my-4">
+                    <h2 class="px-3">Your groups</h2>
+
+                    <div class="LeftBarFriends mt-4 px-3 py-1 d-flex
+                            align-items-center gap-4">
+                        <figure class="my-0 group-img-container">
+                            <img src="Assets/Images/20170108_200725.jpg" alt="">
+                        </figure>
+                        <div class="userPostHead">
+                            <h6 class="mb-0">Muhammad Ali</h4>
+                        </div>
+                    </div>
+                    <div class="LeftBarFriends mt-4 py-1 px-3 d-flex
+                            align-items-center gap-4">
+                        <figure class="my-0 group-img-container">
+                            <img src="Assets/Images/20170108_200725.jpg" alt="">
+                        </figure>
+                        <div class="userPostHead">
+                            <h6 class="mb-0">Muhammad Ali</h4>
+                        </div>
+                    </div>
+                </div>
                 <hr>
                 <section class="FriendSuggestion ms-4 px-3">
 
@@ -392,7 +429,7 @@
 
 
 
-                    <form class="p-5">
+                    <form style="width: 50vw;" class="p-5">
 
                         <div class="d-flex mb-5 align-items-center gap-3
                                 postNowHead">
@@ -403,9 +440,9 @@
                             <!-- <input type="text" placeholder="What on Your mind?" name="" id=""> -->
                             <h2 class="profileName">Muhammad Ali</h2>
                         </div>
-                        <main class="d-flex mb-4">
-
-                            <section class="ViewTrans">
+                        <main class="modalInput d-flex
+                                justify-content-between gap-3 mb-4">
+                            <section class="modalLeftSection">
 
 
                                 <div class="mb-3">
@@ -443,7 +480,7 @@
 
                             </section>
 
-                            <section class="mx-3">
+                            <section class="modalLeftSection">
 
                                 <div class="mb-3">
                                     <div class="input-parent">

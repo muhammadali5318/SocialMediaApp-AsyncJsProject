@@ -19,7 +19,6 @@ let mailExist = document.querySelector(".mailExist");
 let accountCreated = document.querySelector(".accountCreated");
 
 
-// this variable is responsible for checking emails it is already exists or not
 
 
 // When we click on sign up now button this function will be invoked
@@ -27,19 +26,18 @@ let accountCreated = document.querySelector(".accountCreated");
 
 
 SignUpBtn.addEventListener("click", function(e) {
-
+    
     e.preventDefault();
+    
 
+    // this variable is responsible for checking emails it is already exists or not
     let validate = true;
 
-
-
-
+    //Getting fields in which user enters data
     var signUpname = document.querySelector("#signUpInputname");
     var SignUpEmail = document.querySelector("#SignUpInputEmail");
     var SignUpPassword = document.querySelector("#password");
     var SignUpConPassword = document.querySelector("#password1");
-    // console.log(pasmatch);
 
     displayNone();
  
@@ -95,13 +93,9 @@ SignUpBtn.addEventListener("click", function(e) {
 
                     localStorage.setItem(obj.email, JSON.stringify(obj));
                     displayNone();
-                    // alert("Congrats Yours account is successfully created");
+                    clearFields();
                     accountCreated.style.display = "Block";
-
-                    // reload();
                 } else {
-                    // alert("password does not match");
-                    // SignUpPassword.style.border = "2px solid red";
                     pasmatch.style.display = "block";
                     pasmatch1.style.display = "block";
                 }
@@ -117,6 +111,17 @@ SignUpBtn.addEventListener("click", function(e) {
         alert("Kindly Fill the information Correctly");
     }
 
+
+    // this function will clear the fields after successful account creation
+    function clearFields(){
+       document.querySelector("#signUpInputname").value = "";
+       document.querySelector("#SignUpInputEmail").value = "";
+       document.querySelector("#password").value = "";
+       document.querySelector("#password1").value = "";
+        
+    }
+
+
 })
 
 function displayNone() {
@@ -125,3 +130,4 @@ function displayNone() {
     paslength.style.display = "none";
     paslength1.style.display = "none";
 }
+
