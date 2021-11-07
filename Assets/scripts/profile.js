@@ -3,6 +3,22 @@
 console.log("I'm user profile");
 
 
+const logout = document.querySelector(".logout");
+logout.addEventListener('click', function() {
+    localStorage.setItem("currentUser", "");
+    window.location.href = "login.html";
+})
+
+
+const PageRedirect = localStorage.getItem("currentUser");
+console.log(PageRedirect);
+
+if (PageRedirect === "") {
+    window.location.href = "login.html";
+}
+
+
+
 /*
 Purpose: This file profile.js is responsible to show user data who is logged in.
 and user can also update his data from this page

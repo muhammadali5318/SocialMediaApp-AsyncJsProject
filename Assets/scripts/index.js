@@ -4,7 +4,6 @@ console.log("Running index.js");
 
 const logout = document.querySelector(".logout");
 logout.addEventListener('click', function() {
-    // alert("clicked")
     localStorage.setItem("currentUser", "");
     window.location.href = "login.html";
 })
@@ -13,11 +12,9 @@ logout.addEventListener('click', function() {
 const PageRedirect = localStorage.getItem("currentUser");
 console.log(PageRedirect);
 
-// if (PageRedirect === "") {
-//     window.location.href = "login.html";
-// } else {
-
-
+if (PageRedirect === "") {
+    window.location.href = "login.html";
+}
 
 
 
@@ -485,7 +482,5 @@ window.addEventListener("scroll", () => {
 
 })
 
-
-// }
 
 // ************************load posts end********************
