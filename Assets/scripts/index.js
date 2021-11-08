@@ -133,7 +133,8 @@ function fetchSpecificUserData(id) {
 // ********************* This function will render user data in main contnaier *********************
 function renderUserPosts(arr, commentArr) {
 
-
+    // const commentId = 0;
+    // const commentId1 = 0;
     arr.forEach(function(element) {
 
 
@@ -219,7 +220,7 @@ function renderUserPosts(arr, commentArr) {
 
                           <div class=" d-flex align-items-center gap-3
                             postNowHead">
-                        <figure class="commentContainer my-0 img-container">
+                        <figure  class="commentContainer my-0 img-container">
                             <img src="${commentArr[0].owner.picture}" alt="">
                         </figure>
                         <div d-flex flex-column  >
@@ -241,7 +242,7 @@ function renderUserPosts(arr, commentArr) {
                         
                         <div>
                         <input class="commentInput" type="text" value="${commentArr[1].message}" id="commentLabel" >
-                        <i class="ms-1 deleteIcon fas fa-trash"></i>
+                        <i onclick="deleteComment()" class="ms-1 deleteIcon fas fa-trash"></i>
                         
                         </div>
                         </div>
@@ -260,9 +261,12 @@ function renderUserPosts(arr, commentArr) {
 }
 
 function deleteComment() {
-    const commentContainer = document.querySelector(".commentContainer");
+    const commentContainer = document.querySelectorAll(".commentContainer");
     console.log(commentContainer);
-    commentContainer.style.display = "none";
+    commentContainer.forEach(element => {
+
+        element.style.display = "none";
+    });
 }
 
 
